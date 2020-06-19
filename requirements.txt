@@ -3,4 +3,5 @@ requests==2.24.0
 dialogflow==1.0.0
 python-dotenv==0.13.0
 pusher==3.0.0    
+setuptools==47.3.1
 
