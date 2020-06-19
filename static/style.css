@@ -1,0 +1,37 @@
+/* /static/style.css */
+
+body,html {
+    height: 100%;
+}
+
+.chat-container {
+    margin: 0px;
+    padding: 10px;
+    background-color: #F8F8F8;
+}
+
+.chat-message {
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 3px;
+}
+
+.bot-message {
+    background: rgb(17, 51, 85);
+    color: white;
+}
+
+.human-message {
+    background: dodgerblue;
+    color: white;
+    margin: 13px 1px;
+}
+
+.input {
+  width: 100%;
+  margin: 25px 0px;
+  padding: 10px;
+  height: 45px;
+  border: 1px solid rosybrown;
+  border-radius: 20px;
+}
