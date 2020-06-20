@@ -26,7 +26,7 @@ def get_movie_detail():
     
     try:
         movie = data['queryResult']['parameters']['movie']
-        api_key = os.getenv('OMDB_API_KEY')
+        api_key = '1235fc1b'
         
         movie_detail = requests.get('http://www.omdbapi.com/?t={0}&apikey={1}'.format(movie, api_key)).content
         movie_detail = json.loads(movie_detail)
@@ -65,7 +65,7 @@ def send_message():
         socketId = ''
         
     message = request.form['message']
-    project_id = os.getenv('DIALOGFLOW_PROJECT_ID')
+    project_id = 'movie-bot-dbfcdq'
     fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
     response_text = { "message":  fulfillment_text }
 
