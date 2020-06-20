@@ -17,7 +17,7 @@ pusher_client = pusher.Pusher(
 
 @app.route('/')
 def index():
-    return "Hello World"
+    return render_template('index.html')
 
 @app.route('/get_movie_detail', methods=['POST'])
 def get_movie_detail():
