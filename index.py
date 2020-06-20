@@ -9,11 +9,12 @@ app = Flask(__name__)
 
 # initialize Pusher
 pusher_client = pusher.Pusher(
-    app_id=os.getenv('PUSHER_APP_ID'),
-    key=os.getenv('PUSHER_KEY'),
-    secret=os.getenv('PUSHER_SECRET'),
-    cluster=os.getenv('PUSHER_CLUSTER'),
-    ssl=True)
+  app_id='1022393',
+  key='76961cbaed147db37fd5',
+  secret='39a15f867e1dabb8e48f',
+  cluster='ap2',
+  ssl=True
+)
 
 @app.route('/')
 def index():
